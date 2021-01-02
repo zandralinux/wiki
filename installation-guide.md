@@ -12,8 +12,7 @@
 
 First, it is necessary to configure the build system. To do so, create a
 `config.mk` by copying `config.def.mk` and edit it. You can change the target
-architecture, compile flags, and more here. Also, check to make sure
-`$TOOLCHAIN_TRIPLET` matches your toolchain's naming format.
+architecture, compile flags, and more here.
 
 After this, you can begin the build process:
 
