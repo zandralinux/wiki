@@ -17,23 +17,19 @@ architecture, compile flags, and more here.
 After this, you can begin the build process:
 
 ```
-# required definitions for mkbuild
-export configmk=$(pwd)/config.mk # in zandra base directory
-export mkbuild=$(pwd)/mkbuild # in zandra base directory
-
-# add cross compiler to $PATH (replace /opt/cross/bin if installed somewhere else)
-# also make sure your pkgtools installation is in $PATH
-export PATH="/opt/cross/bin:$PATH"
-
-mk init # initialize git submodules
-mk # build base packages
+[user@zandra ~]$ export mkbuild=$(pwd)/mkbuild # required for mkbuild
+[user@zandra ~]$ export configmk=$(pwd)/config.mk # required for mkbuild
+[user@zandra ~]$ export PATH="/opt/cross/bin:$PATH" # add cross compiler to $PATH
+ 
+[user@zandra ~]$ mk init # initialize git submodules
+[user@zandra ~]$ mk # build base packages
 ```
 
 ## Installing the packages to a root directory
 
 ```
-export ROOT="rootdir" # replace with desired path (an existing directory)
-mk install
+[user@zandra ~]$ export ROOT="rootdir" # replace with desired path (an existing directory)
+[user@zandra ~]$ mk install
 ```
 
 ## Making a bootable image
