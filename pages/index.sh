@@ -1,1 +1,1 @@
-NAME="Zandra Wiki"
+NAME="Home"
