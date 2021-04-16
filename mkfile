@@ -3,6 +3,9 @@ webbase="/var/www/wiki"
 all:QV:
 	teal
 
+clean:QV:
+	rm -rfv out/
+
 install:QV:
 	cp -rfv out/* $webbase
 
