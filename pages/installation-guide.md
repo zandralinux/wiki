@@ -12,18 +12,19 @@
 
 First, it is necessary to configure the build system. To do so, create a
 `config.mk` by copying `config.def.mk` and edit it. You can change the target
-architecture, compile flags, and more here.
+architecture, compile flags, and more here. Also make sure that your
+cross-compiler, `pkgtools`, and `mk` binaries are in `$PATH` before beginning.
 
 After this, you can begin the build process:
 
 ```
 [user@zandra ~]$ export mkbuild=$(pwd)/mkbuild # required for mkbuild
 [user@zandra ~]$ export configmk=$(pwd)/config.mk # required for mkbuild
-[user@zandra ~]$ export PATH="/opt/cross/bin:$PATH" # add cross compiler to $PATH
  
 [user@zandra ~]$ mk init # initialize git submodules
 [user@zandra ~]$ mk # build base packages
 ```
+
 
 ## Installing the packages to a root directory
 
