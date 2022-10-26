@@ -1,0 +1,57 @@
+body {
+	background-color: #222;
+	color: #0f4;
+	font: 1.2em monospace;
+}
+
+#wrapper {
+	max-width: 60rem;
+	margin: auto;
+	padding: 0.5em;
+}
+
+a {
+	color: #0f4;
+	text-decoration: underline;
+}
+
+h1 {
+	text-align: center;
+	width: 100%;
+}
+
+#links {
+	padding: 0.5em;
+	text-align: center;
+	width: 100%;
+}
+
+#links a {
+	padding: 0.3em;
+}
+
+p {
+	color: #00ff40;
+	line-height: 2em;
+}
+
+li {
+	padding: 0.5em;
+}
+
+#header {
+	background-color: #000;
+	color: #fff;
+	top: 0px;
+	width: 100%;
+	text-align: center;
+}
+
+#side-bar a {
+	top: 0px;
+	position: relative;
+	font-size: 150%;
+	margin: 0.5em;
+	color: #fff;
+	text-decoration: none;
+}
