@@ -6,7 +6,7 @@ all:QV:
 clean:QV:
 	rm -rfv out/
 
-install:QV:
+install:QV: all
 	cp -rfv out/* $webbase
 
 uninstall:QV:
